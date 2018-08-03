@@ -14,7 +14,7 @@ describe "Blog Post App" do
     it "creates a new blog post" do
       visit '/posts/new'
 
-      fill_in :name, :with => "my favorite blog post"
+      fill_in :name, :with => "my favorite blog post", disabled: nil
       fill_in :content, :with => "blogging!!!!"
 
       click_button 'submit'
